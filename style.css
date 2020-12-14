@@ -1,0 +1,142 @@
+/*permet de retirer les marges par defauts*/
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*modification des titres, les couleurs sont changés dans les class*/
+h1{
+    font-family: Arial, sans-serif;
+    color: rgb(2, 2, 126);
+    font-size: 34px;
+}
+
+h2{
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+}
+h3{
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+}
+p{
+    font-family: Arial, sans-serif;
+}
+
+body{
+   background-color: grey;
+}
+/*feuille format A4 pour simuler le format du CV*/
+.feuille{
+    display: flex;
+    flex-direction: column;
+    width: 21cm;
+    height: 29.5cm;
+    background-color:white;
+    margin: auto auto;
+}
+/*Feuille séparé en deux blocs haut et bas*/
+.haut{
+    display: flex;
+    width: inherit;
+    height: 23cm;
+}
+/*bas = Mes Centres d'intérêts*/
+.policeBas{
+    color: rgb(2, 2, 126);
+}
+.bas{
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    height: 6.5cm;
+    background-color: rgb(184, 182, 207);
+    padding: 4mm;
+}
+/*Elements contenus dans la colonne de gauche */
+.policeGauche{
+    color:#b3b3b3;
+}
+ .colonneGauche{
+     display: flex;
+     flex-direction: column;
+     width: 8cm;
+     height: inherit;
+     background: linear-gradient(rgb(2, 2, 126),  rgb(152, 146, 211));
+ }
+ .photo{
+     display: flex;
+     width: auto;
+     height: 5cm;
+     margin: 10mm auto;
+ }
+ .identite{
+     margin-left: 4mm;
+     margin-right: 4mm;
+ }
+ .formation{
+     border-top: solid  #b3b3b3;
+     margin-left: 4mm;
+     margin-right: 4mm;
+ }
+ .atouts{
+     border-top: solid  #b3b3b3;
+     margin-left: 4mm;
+     margin-right: 4mm;
+ }
+ /*Elements contenus dans la colonne de droite*/
+ .colonneDroite{
+     display: flex;
+     flex-direction: column;
+     width: inherit;
+     height: inherit;
+ }
+ .titre{
+     background-color:rgb(184, 182, 207);
+     padding: 6mm;
+     margin-top: 4mm;
+ }
+ .accroche{
+     margin: 8mm 8mm 0mm 8mm;
+     
+ }
+ .policeAccroche{
+     font-style: italic;
+     font-family: 'Times New Roman', Times, serif;
+ }
+ /*Elements contenus dans competence*/
+ .grasBleu{
+     font-weight: bold;
+     font-size: 18px;
+     color: rgb(2, 2, 126);
+ }
+ .titreCompetence{
+     margin: 8mm 8mm 0mm 8mm;
+     border-top: solid rgb(2, 2, 126);
+ }
+ .policeBleu{
+     color:  rgb(2, 2, 126);
+ }
+ .competence{
+     margin: 8mm 8mm 0mm 8mm;
+     display: flex;
+ }
+ .compGauche{
+     width: 6.75cm;
+     border-right: solid rgb(2, 2, 126);/*barre séparateur vertical*/
+ }
+ .policeBleuRetrait{
+    margin-left: 4mm;
+    color:  rgb(2, 2, 126);
+ }
+ .compDroite{
+     width: 6.75cm;
+ }
+ /*Elements contenus dans experiences*/
+.titreExperience{
+     margin: 8mm 8mm 0mm 8mm;
+     border-top: solid rgb(2, 2, 126);
+ }
+.experience{
+    margin: 8mm 8mm 8mm 8mm;
+}
